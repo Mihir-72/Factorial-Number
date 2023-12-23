@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Factorial calculator</h1>
+
+    <label for="data">Enter a non-negative integer</label>
+    <input type="number" class="data" />
+
+    <button class="btn">calculate Factorial</button>
+
+    <p class="output"></p>
+
+    <script>
+      const btn = document.querySelector(".btn");
+
+      const output = document.querySelector(".output");
+
+      btn.addEventListener("click", function () {
+        // output.innerHTML = `The factorial of ${data.value} is `;
+
+        if (n == 0 || n == 1) {
+          console.log("1");
+        } else {
+          console.log(n * (n - 1));
+        }
+      });
+    </script>
+  </body>
+</html>
